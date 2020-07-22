@@ -1,0 +1,8 @@
+SELECT DISTINCT ?nama ?genre ?asal WHERE {
+?penyanyi a dbpedia-owl:Person.
+?penyanyi dbpedia-owl:wikiPageWikiLink <http://id.dbpedia.org/resource/Kategori:Penyanyi_Indonesia>.
+?penyanyi rdfs:label ?nama.
+?penyanyi <http://id.dbpedia.org/property/genre> ?genre.
+?penyanyi <http://id.dbpedia.org/property/birthplace> ?asal.
+}
+
